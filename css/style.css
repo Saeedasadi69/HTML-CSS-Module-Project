@@ -1,10 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 /**
  * Add your custom styles below
@@ -16,4 +10,114 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  /* width: 1280px; */
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+  font-size: 4rem;
+}
+h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.slogan {
+  font-weight: 200;
+  font-size: 2rem;
+}
+nav {
+  width: 86%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+}
+.logo img {
+  width: 30px;
+}
+menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-right: 24px;
+}
+menu > li {
+  list-style: none;
+}
 
+.main-image {
+  background: url(../img/first-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: calc(70vh);
+  text-align: center;
+  padding-top: 25vh;
+  color: white;
+}
+.main-image > h1 {
+  margin-bottom: -16px;
+}
+.main-button {
+  background-color: rgb(227, 98, 24);
+  padding: 20px 36px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  line-height: 72px;
+}
+#services {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.service-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px 80px;
+}
+.service-items img {
+  max-width: 60%;
+}
+.service-items p {
+  font-size: 1.6rem;
+}
+
+#call-to-action {
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-image img {
+  width: 100%;
+  margin-right: 50px;
+}
+.cta-text {
+  text-align: center;
+  font-style: italic;
+}
+.cta-text p {
+  font-size: 2.2rem;
+  padding: 0 120px;
+  color: #444444;
+}
+
+.cta-text > p::before,
+.cta-text > p::after {
+  content: "''";
+  color: rgb(227, 98, 24);
+  margin-right: 8px;
+}
