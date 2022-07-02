@@ -49,7 +49,16 @@ menu {
 menu > li {
   list-style: none;
 }
-
+menu a {
+  text-decoration: none;
+  color: #7f8289;
+}
+menu a:hover {
+  color: #e0633a;
+}
+menu a:active {
+  color: #333333;
+}
 .main-image {
   background: url(../img/first-background.jpg) no-repeat;
   background-size: cover;
@@ -64,7 +73,7 @@ menu > li {
   margin-bottom: -16px;
 }
 .main-button {
-  background-color: rgb(227, 98, 24);
+  background-color: #e0633a;
   padding: 20px 36px;
   color: white;
   text-decoration: none;
@@ -118,6 +127,34 @@ menu > li {
 .cta-text > p::before,
 .cta-text > p::after {
   content: "''";
-  color: rgb(227, 98, 24);
+  color: #e0633a;
   margin-right: 8px;
+}
+
+footer {
+  padding: 56px 0;
+}
+.divider {
+  width: 70%;
+  margin: 24px auto;
+  border-top: 1px solid #e1e1e1;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-icons div {
+  border: 1px solid #eaeaea;
+  border-radius: 40px;
+  padding: 14px 12px 10px 14px;
+}
+
+.copyright-text {
+  color: #9a9b9c;
+  font-size: 1rem;
 }
